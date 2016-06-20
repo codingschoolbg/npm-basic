@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "lite-server",
     "uglify": "uglifyjs js/*.js -m -o js/scripts.min.js",
-    "imagemin": "imagemin img dist/img -p"
+    "less": "less css/style.less css/style.compiled.css -p",
+    "jshint": "jshint js/* || true"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,8 @@
   },
   "homepage": "https://github.com/codingschoolbg/npm-basic#readme",
   "devDependencies": {
-    "imagemin": "^5.2.1",
-    "imagemin-cli": "^3.0.0",
+    "jshint": "^2.9.2",
+    "less": "^2.7.1",
     "lite-server": "^2.2.0",
     "uglify-js": "^2.6.2"
   }
